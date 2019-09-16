@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 26
     buildToolsVersion "21.1.0"
 
     defaultConfig {
         applicationId "com.mycompany.aide_rx_android"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -20,5 +20,8 @@ android {
 }
 
 dependencies {
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.+'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.+'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
